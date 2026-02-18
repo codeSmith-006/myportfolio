@@ -1,0 +1,38 @@
+.hero-texture {
+  position: absolute;
+  inset: -20%;
+  z-index: 10;
+
+  background:
+      radial-gradient(
+      700px 260px at 50% 0%,
+      rgba(255, 255, 255, 0.22),
+      transparent 70%
+    ),
+    /* top glow */
+    radial-gradient(
+      600px 300px at 50% 0%,
+      rgba(180, 255, 220, 0.15),
+      transparent 70%
+    ),
+
+    /* concentric rings */
+    repeating-radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.04) 0px,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 90px
+    ),
+
+    /* depth glow */
+    radial-gradient(
+      circle at center,
+      rgba(120, 255, 200, 0.06),
+      transparent 65%
+    );
+
+  filter: blur(0.3px);
+}
+
+

@@ -1,0 +1,28 @@
+.corner-box {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+.corner-box::before,
+.corner-box::after {
+  content: "";
+  position: absolute;
+  width: 30px;   /* length of corner */
+  height: 30px;  /* length of corner */
+  border: 2px solid rgba(255,255,255,0.8);
+}
+
+.corner-box::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner-box::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
